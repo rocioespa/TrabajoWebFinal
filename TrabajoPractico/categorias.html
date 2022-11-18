@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/54694bca9d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/categorias.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"> <img src="img/logo1.png" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categorias.html" class="nav-link  active">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="micuenta.html" class="nav-link">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="cart-shopping">
+                        </section><a href="carrito.html"><i id="carrito" class="fa fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <h2 class="h2-sub">
+                    <span class="fil">B</span>ienvenido
+                </h2>
+                <h1 class="head">Green Market</h1>
+                <div class="he-des">
+                    <h5>Dietetica</h5>
+
+                </div>
+            </div>
+        </section>
+        <section class="categoria-grid">
+            <section class="ctg">
+                <div class="categoria">
+                    <div class="cat-titulo">
+                        <h2>CATEGORIAS</h2>
+                    </div>
+                    <section class="buscador">
+                        <div class="box">
+                            <div class="container-1">
+                                <span class="icon"><i class="fa fa-search"></i></span>
+                                <input type="text" name="buscador" id="buscador" class="search">
+                                
+                            </div>
+                          </div>
+                          <div id="resultado">
+                            
+                          </div>
+                    </section>
+                    <!--<div class="link-cat">
+                        <div class="link-a">
+                            <a href="#almacen">Almacen</a>
+                        </div>
+                        <div class="link-a">
+                            <a href="#congelados">Congelados</a>
+                        </div>
+                        <div class="link-a">
+                            <a href="#bebidas">Bebidas</a>
+                        </div>
+                        <div class="link-a">
+                            <a href="#produ_granel">Productos a granel</a>
+                        </div>
+                        <div class="link-a">
+                            <a href="#produ_vegano">Productos veganos</a>
+                        </div>
+                    </div>-->
+                </div>
+            </section>
+
+            <section id="almacen">
+            
+                <div class="ctg-titulo">
+                    <h2>Almacen</h2>
+                </div>
+                <div class="almacen">
+                    <div class="ap">
+                        <a href="producto.html"><img src="imgprodu/yogurenterolimon.jpg" alt=""></a>
+                        <h3>Yogur Entero de Limon</h3>
+                        <h3 class="precio">$240</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:1, producto: 'Yogur Entero de Limon', precio: 240, src: 'imgprodu/yogurenterolimon.jpg', cantidad: 1})">Agregar</button>
+                    </div>
+                    <div class="ap">
+                        <a href="producto.html"><img src="imgprodu/salsaHierbasFinasZero.jpg" alt=""></a>
+                        <h3>Salsa de Hierbas Finas</h3>
+                        <h3 class="precio">$900</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:2, producto: 'Salsa de Hierbas Finas chips', precio: 900, src: 'imgprodu/salsaHierbasFinasZero.jpg', cantidad: 1})">Agregar</button>
+                    </div>
+                    <div class="ap">
+                        <a href="producto.html"><img src="imgprodu/lecheCastañasChocolate.jpg" alt=""></a>
+                        <h3>Leche de Castaña de Chocolate</h3>
+                        <h3 class="precio">$440</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:3, producto: 'Pita Leche de Castaña de Chocolate', precio: 440, src: 'imgprodu/lecheCastañasChocolate.jpg', cantidad: 1})">Agregar</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="section-ctg" id="congelados">
+            <div class="ctg-titulo">
+                <h2>Congelados</h2>
+            </div>
+            <div class="almacen-produ">
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/fruillaCongelada.png" alt="" class="producto-img"></a>
+                    <h3>Frutillas Congeladas</h3>
+                    <h3 class="precio">$640</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:4, producto: 'Frutillas Congeladas', precio: 640, src: 'imgprodu/fruillaCongelada.png', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/champignionesRebozados.png" alt=""
+                            class="producto-img"></a>
+                    <h3>Champigniones Rebozados</h3>
+                    <h3 class="precio">$580</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:5, producto: 'Champigniones Rebozados', precio: 580, src: 'imgprodu/champignionesRebozados.png', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/frambuesa congelada.png" alt="" class="producto-img"></a>
+                    <h3>Frambuesa Congeladas</h3>
+                    <h3 class="precio">$570</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:6, producto: 'Frambuesa Congeladas', precio: 570, src: 'imgprodu/frambuesa congelada.png', cantidad: 1})">Agregar</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-ctg" id="bebidas">
+            <div class="ctg-titulo">
+                <h2>Bebidas</h2>
+            </div>
+            <div class="almacen-produ">
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/kefir_bebida_saborArandanos.jpeg" alt=""
+                            class="producto-img"></a>
+                    <h3>Kefir Bebida Sabor Arandanos</h3>
+                    <h3 class="precio">$490</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:7, producto: 'Kefir Bebida Sabor Arandanos', precio: 490, src: 'imgprodu/kefir_bebida_saborArandanos.jpeg', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/kefir_bebida_saborLimonada.jpeg" alt=""
+                            class="producto-img"></a>
+                    <h3>Kefir Bebida Sabor Limonada</h3>
+                    <h3 class="precio">$490</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:8, producto: 'Kefir Bebida Sabor Limonada', precio:490, src: 'imgprodu/kefir_bebida_saborLimonada.jpeg', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/kefir_bebida_saborMaracuya.jpeg" alt=""
+                            class="producto-img"></a>
+                    <h3>Kefir Bebida Sabor Maracuya</h3>
+                    <h3 class="precio">$490</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:9, producto: 'Kefir Bebida Sabor Maracuya', precio: 490, src: 'imgprodu/kefir_bebida_saborMaracuya.jpeg', cantidad: 1})">Agregar</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-ctg" id="produ_granel">
+            <div class="ctg-titulo">
+                <h2>Productos a Granel</h2>
+            </div>
+            <div class="almacen-produ">
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/mix_desayuno-semillaschia.jpeg" alt=""
+                            class="producto-img"></a>
+                    <h3>Mix Desayuno de Semillas de Chia</h3>
+                    <h3 class="precio">$280</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:10, producto: 'Mix Desayuno de Semillas de Chia', precio: 280, src: 'imgprodu/mix_desayuno-semillaschia.jpeg', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/mix_ensaladasysopas_semillasgirasol.jpeg" alt=""
+                            class="producto-img"></a>
+                    <h3>Mix Ensaladas y Sopas de Semillas de Girasol</h3>
+                    <h3 class="precio">$260</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:11, producto: 'Mix Ensaladas y Sopas de Semillas de Girasol', precio: 260, src: 'imgprodu/mix_ensaladasysopas_semillasgirasol.jpeg', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/mix_multisemillas_sesamo_integral.jpeg" alt=""
+                            class="producto-img"></a>
+                    <h3>Mix Multisemillas de Sesamo Integral</h3>
+                    <h3 class="precio">$290</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:12, producto: 'Mix Multisemillas de Sesamo Integral', precio: 290, src: 'imgprodu/mix_multisemillas_sesamo_integral.jpeg', cantidad: 1})">Agregar</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-ctg" id="produ_vegano">
+            <div class="ctg-titulo">
+                <h2>Productos Veganos</h2>
+            </div>
+            <div class="almacen-produ">
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/chocolate80cacao.jpg" alt="" class="producto-img"></a>
+                    <h3>Chocolate 80% Cacao</h3>
+                    <h3 class="precio">$450</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:13, producto: 'Chocolate 80% Cacao', precio: 450, src: 'imgprodu/chocolate80cacao.jpg', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/hamburguesasparty2u.png" alt="" class="producto-img"></a>
+                    <h3>Chickenvil Hamburguesas Party 2U</h3>
+                    <h3 class="precio">$350</h3>
+                        <button class="btn cta-btn" onclick="agregarAlCarrito({id:14, producto: 'Chickenvil Hamburguesas Party ', precio: 350, src: 'imgprodu/hamburguesasparty2u.png', cantidad: 1})">Agregar</button>
+                </div>
+                <div class="producto">
+                    <a href="producto.html"><img src="imgprodu/leche-almendras.jpg" alt="" class="producto-img"></a>
+                    <h3>Leche de Almendras</h3>
+                    <h3 class="precio">$590</h3>
+                    <button class="btn cta-btn" onclick="agregarAlCarrito({id:15, producto: 'Leche de Almendras', precio: 590, src: 'imgprodu/leche-almendras.jpg', cantidad: 1})">Agregar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-content-about">
+                    <h4>Nosotras</h4>
+                    <div class="circle">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>España, Rocio Belen</p>
+                    <p>Fernandez, Candela Rocio</p>
+                    <p>Gasparrino, Agostina Ayelen</p>
+                    <p>Murillo, Lucia Daniela</p>
+                </div>
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>Siguenos</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://www.instagram.com/greenmarket_veggie/"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/greenmarket_veggie/"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/greenmarket_veggie/"><i
+                                        class="fab fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Noticias</h4>
+                        <form action="" class="news-form">
+                            <input type="text" class="news-input" placeholder="Escribe tu email">
+                            <button class="news-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/categorias.js"></script>
+    <script src="js/carritoAgregar.js"></script>
+    <div>
+        <a href="#" class="arriba"></a>
+    </div>
+</body>
+
+</html>

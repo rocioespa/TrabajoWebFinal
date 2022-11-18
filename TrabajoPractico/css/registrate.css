@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/*Globales*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+section {
+    padding: 62px 0;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 38px;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(243, 126, 8, 0.684), transparent);
+}
+
+/*main*/
+
+.form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: 200px auto;
+    /*se puede centrar con un margin auto
+    ya que su padre tiene un display:flex*/
+
+}
+
+.form__container {
+    width: 100%;
+    display: grid;
+    gap: 1.2em;
+    grid-auto-columns: 100%;
+}
+
+.form__title {
+    text-align: center;
+    font-size: 2.9rem;
+    margin-bottom: .4em;
+}
+
+.form__input {
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: .6em 1em;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.label-form {
+    font-size: 1.5rem;
+}
+
+
+.form__cta {
+    font-family: inherit;
+    background-color: #080fe0;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: .9rem .6rem;
+    border-radius: .2rem;
+    cursor: pointer;
+
+}
+
+.form__cta:hover {
+    background-color: #080fe0c2;
+    cursor: pointer;
+}
+
+.registro {
+    font-size: 1.1rem;
+    color: #000;
+    display: inline;
+    float: left;
+
+}
+
+.registro-link {
+    font-size: 1.1rem;
+    color: #000;
+    position: absolute;
+    top: 485px;
+    right: 600px;
+}
+
+.registro-link:hover {
+    border-bottom: 1px solid #080fe0;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mensaje{
+    color: red;
+    font-size: 1.5em;
+
+}
+

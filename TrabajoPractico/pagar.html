@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pagar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/pagar.css">
+    <script src="https://kit.fontawesome.com/ae9ce8ca89.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <form action="" class="form">
+            <div class="icon-x">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <div class="form__container">
+                <h2 class=" form__title">Pagar <i class="fa-regular fa-credit-card"></i></h2>
+
+                <div class="container-cards">
+                    <div class="item-card">
+                        <p><i class="fa-thin fa-credit-card-front"></i>Tarjetas guardadas</p>
+
+                    </div>
+                    <div class="item-card">
+                        <select class="select" name="select">
+                            <option value="value">-Selecionar-</option>
+                            <option value="value">Visa Débito</option>
+                            <option value="value">Mastercard</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                <label class="check-box"><input type="checkbox" id="cbox1" value="first_checkbox"> Otras
+                    tarjetas</label>
+                <div class="container-cards">
+                    <div class="item-card">
+                        <p>Direcciones guardadas</p>
+                    </div>
+                    <div class="item-card">
+                        <select class="select" name="select">
+                            <option value="value">-Selecionar-</option>
+                            <option value="value">Florencio Varela 1903</option>
+                            <option value="value">Pres. Juan Domingo Perón 2231</option>
+                        </select>
+                    </div>
+                </div>
+                <label class="check-box"><input type="checkbox" id="cbox1" value="first_checkbox"> Otra
+                    direccion</label>
+                <div class="item-card">
+                    <a id="carrito" href="carrito.html" class="button-pay">Pagar</a>
+                </div>
+            </div>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="js/carritoAgregar.js"></script>
+
+</html>

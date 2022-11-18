@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis direcciones</title>
+    <link rel="stylesheet" href="css/misdirecciones.css">
+    <script src="https://kit.fontawesome.com/54694bca9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <form action="" class="form">
+            <div class="form__container">
+                <div class="title-container"><h2 class=" form__title">Nueva direccion </h2>
+                    <i class="fa-solid fa-house" id="icon-home"></i>
+                </div>
+                <input type="text" class="form__input" placeholder="Alias" id="alias">
+                <input type="text" class="form__input" placeholder="Direccion" id="direccion">
+               <label class="label-form"for="provincia">Provincia</label>
+                <select name="provincia" id="provincia" required>
+                    <option value="" selected>Seleccione una opcion</option>
+                    <option value="1">Buenos aires</option>
+                    <option value="2">GBA</option>
+                    <option value="3">CABA</option>
+                </select>
+                <label class="label-form" for="localidad">Localidad</label>
+                <select name="localidad" id="localidad" required>
+                    <option value="" selected>Seleccione una opcion</option>
+                    <option value="1">Moron</option>
+                    <option value="2">San justo</option>
+                </select>
+                <input type="tel" class="form__input" placeholder="Telefono" id="telefono">
+                <input id="piso" type="number" class="form__input" placeholder="Piso" >
+                <input id="dto" type="text" class="form__input" placeholder="Dto" >
+                
+    
+                <input type="submit" value="Guardar" class="form__cta">
+                
+            </div>
+            <div id="mensaje"></div>
+            
+        </form>
+    </main>
+    
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+    <script src="js/misdirecciones.js"></script>
+</body>
+</html>

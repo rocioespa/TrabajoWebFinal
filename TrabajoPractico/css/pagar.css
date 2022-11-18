@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/*Globales*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+section {
+    padding: 62px 0;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 38px;
+}
+
+
+.form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 380px;
+    border-radius: 1em;
+    padding: 20px;
+    margin: 100px auto;
+
+}
+
+.form__container {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-auto-columns: 100%;
+}
+
+.form__title {
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 10px
+}
+
+
+.form__cta {
+    font-family: inherit;
+    background-color: #080fe0;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: .9rem 0;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.item-card {
+    display: flex;
+    justify-content: right;
+    padding-top: 1px;
+}
+
+.button-pay {
+    font-family: inherit;
+    background-color: #080fe0;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: .9rem 0;
+    border-radius: .2rem;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.button-pay:hover {
+    background-color: #080fe0c2;
+}
+
+.select {
+
+    margin: 2px auto 20px auto;
+    border: 1px solid #d9d9d9;
+    height: 20px;
+    overflow: hidden;
+    width: 150px;
+    position: relative;
+}
+
+.check-box {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icon-x {
+    margin: 2px;
+}
+
+.icon-x i {
+    display: flex;
+    justify-content: right;
+    font-size: 25px;
+
+}

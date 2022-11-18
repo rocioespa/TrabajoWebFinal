@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta</title>
+    <script src="https://kit.fontawesome.com/54694bca9d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/micuenta.css">
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"> <img src="img/logo1.png" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link ">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="categorias.html" class="nav-link">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="micuenta.html" class="nav-link active">Mi cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="cart-shopping">
+                        <a href="carrito.html"><i id="carrito" class="fa fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--fin header-->
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <h2 class="h2-sub">
+                    <span class="fil">B</span>ienvenido
+                </h2>
+                <h1 class="head">Green Market</h1>
+                <div class="he-des">
+                    <h5>Dietetica</h5>
+
+                </div>
+            </div>
+        </section>
+        <!--main-->
+
+        <section class="container-1">
+            <img class="foto-usuario" src="img/foto-usuario.jpeg" alt="">
+            <h2 class="titulo-micuenta">Nombre y Apellido</h2>
+        </section>
+        <section class="t2">
+            <div class="seccion-tabla">
+                <h2 class="titulo-tabla">Mis direcciones</h2>
+                <input type="button" class="button" value="Agregar" id="btn-abrir-modal" name="Agregar" ></a>
+            </div>
+            <table id="tabla-dire">
+                <thead class="contenedor-direccion">
+                    <tr>
+                        <th class="direccion">Alias</th>
+                        <th class="direccion">Direccion</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="tabla">
+                    <tr>
+                        <td>Direccion 1</td>
+                        <td>xxx</td>
+                    </tr>
+                    <tr>
+                        <td>Direccion 2</td>
+                        <td>xxxxxx</td>
+                    </tr>
+                    <tr id="dire">
+                    </tr>
+                    </tfoot>
+                    
+            </table>
+            <button class="boton1">
+                <div class="edit-buttons3">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </button>
+            <button class="boton1">
+                <div class="edit-buttons4">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </button>
+            <button id="boton1" class="oculto">
+                <div class="edit-buttons5">
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </button>
+        </section>
+        
+        <dialog id="modal">
+            <form method="dialog" class="form">
+                <div class="form__container">
+                    <div class="title-container">
+                        <h2 class=" form__title">Nueva direccion </h2>
+                        <i class="fa-solid fa-house" id="icon-home"></i>
+                    </div>
+                    <input type="text" class="form__input" placeholder="Alias" id="alias">
+                    <input type="text" class="form__input" placeholder="Direccion" id="direccion">
+                    <label class="label-form" for="provincia">Provincia</label>
+                    <select name="provincia" id="provincia" required>
+                        <option value="" selected>Seleccione una opcion</option>
+                        <option value="1">Buenos aires</option>
+                        <option value="2">GBA</option>
+                        <option value="3">CABA</option>
+                    </select>
+                    <label class="label-form" for="localidad">Localidad</label>
+                    <select name="localidad" id="localidad" required>
+                        <option value="" selected>Seleccione una opcion</option>
+                        <option value="1">Moron</option>
+                        <option value="2">San justo</option>
+                    </select>
+                    <input type="tel" class="form__input" placeholder="Telefono" id="telefono">
+                    <input id="piso" type="number" class="form__input" placeholder="Piso">
+                    <input id="dto" type="text" class="form__input" placeholder="Dto">
+
+
+                    <input type="submit" value="Guardar"  id="guardar"
+                    class="form__cta">
+
+                </div>
+                <div id="mensaje"></div>
+
+            </form>
+            <button id="btn-cerrar-modal" class="button" >cerrar</button>
+        </dialog>
+   
+            <section class="t">
+                <div class="seccion-tabla">
+                    <h2 class="titulo-tabla">Mis metodos de pago</h2>
+                    <input type="submit" value="Agregar" id="btn-abrir-modal1" name="Agregar" class="button">
+                </div>
+                <div id="metodos"></div>
+                <table id="tabla-mp1">
+                    <thead class="contenedor-direccion">
+                        <th >Alias</th><br>
+                    </thead>
+                    <tbody id="tabla-mp">
+                    <tr>
+                        <td>Debito VISA</td>
+                    </tr><br>
+                    <tr>
+                        <td>LemonCash</td>
+                    </tr>
+                    <tr id="meto">
+                        <!--<td>texto1</td>-->
+                    </tr>
+                </tfoot>
+                </table>
+                <button class="boton">
+                    <div class="edit-buttons">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </button>
+                <button class="boton">
+                    <div class="edit-buttons1">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </button>
+                <button id="boton" class="oculto">
+                    <div class="edit-buttons2">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </button>
+               
+               
+                <!-- metodos -->
+            </section>
+             <dialog id="modal-mp">
+                <form method="dialog" action="" class="form" id="form1">
+                    <div class="form__container">
+                        <div class="title-container">
+                            <h2 class=" form__title">Nueva tarjeta</h2>
+                            <i class="fa-solid fa-credit-card" id="icon-tarjeta"></i>
+                        </div>
+                        <input id="aliasd1" type="text" class="form__input" placeholder="Alias">
+                        <input id="numTarjeta"type="text" class="form__input" placeholder="Numero tarjeta">
+                        <input id="codigo"type="text" class="form__input" placeholder="Código">
+                        <label for="Vencimiento" id="vencimiento" name="vencimiento" >Vencimiento</label>
+                        <input id="vencimientos" type="text" class="form__input" placeholder="Vencimiento">
+                        <input id="nombre" type="text" class="form__input" placeholder="Nombre titular">
+                        
+            
+                        <input type="submit" value="Guardar" id="guardar1" class="form__cta">
+                    </div>
+                    <div class="error" id="mensaje1"></div>
+                  
+                </form>
+                <button id="btn-cerrar-modal1" class="button">cerrar</button>
+            </dialog> 
+    </main>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-content-about">
+                    <h4>Nosotras</h4>
+                    <div class="circle">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>España, Rocio Belen</p>
+                    <p>Fernandez, Candela Rocio</p>
+                    <p>Gasparrino, Agostina Ayelen</p>
+                    <p>Murillo, Lucia Daniela</p>
+                </div>
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>Siguenos</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://www.instagram.com/greenmarket_veggie/"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/greenmarket_veggie/"><i
+                                        class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/greenmarket_veggie/"><i
+                                        class="fab fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Noticias</h4>
+                        <form action="" class="news-form">
+                            <input type="text" class="news-input" placeholder="Escribe tu email">
+                            <button class="news-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/micuenta.js"></script>
+    <script>
+
+        const selectElement = function (element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function () {
+            body.classList.toggle('open');
+        })
+
+    </script>
+    <script src="js/carritoAgregar.js"></script>
+    <div>
+        <a href="#" class="arriba"></a>
+    </div>
+</body>
+
+</html>

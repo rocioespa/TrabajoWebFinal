@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis metodos de pago</title>
+    <link rel="stylesheet" href="css/mismetodos.css">
+    <script src="https://kit.fontawesome.com/54694bca9d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <form action="" class="form">
+            <div class="form__container">
+                <div class="title-container">
+                    <h2 class=" form__title">Nueva tarjeta</h2>
+                    <i class="fa-solid fa-credit-card" id="icon-tarjeta"></i>
+                </div>
+                <input id="alias" type="text" class="form__input" placeholder="Alias">
+                <input id="numTarjeta"type="text" class="form__input" placeholder="Numero tarjeta">
+                <input id="codigo"type="text" class="form__input" placeholder="Código">
+                <label for="Vencimiento" id="vencimiento" name="vencimiento" >Vencimiento</label>
+                <input id="vencimientos"type="month" class="form__input" placeholder="Vencimiento">
+                <input id="nombre" type="text" class="form__input" placeholder="Nombre titular">
+                
+    
+                <input type="submit" value="Guardar" id="guardar" class="form__cta">
+            </div>
+            <div class="error" id="mensaje"></div>
+            <a href=""><input type="submit" value="Volver a mi cuenta" id="Agregar" name="Agregar"></a>
+        </form>
+    </main>
+    
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+<script src="js/mismetodos.js"></script>
+</body>
+    
+</body>
+</html>

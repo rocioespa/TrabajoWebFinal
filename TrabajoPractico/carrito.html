@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/54694bca9d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/carrito.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html" class="logo"><img src="img/logo1.png" alt="" /></a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="categorias.html" class="nav-link">Categorias</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="micuenta.html" class="nav-link">Mi cuenta</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">Login</a>
+          </li>
+          <li class="cart-shopping">
+            <a href="carrito.html"><i id="carrito" class="fa fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <h2 class="h2-sub"><span class="fil">B</span>ienvenido</h2>
+        <h1 class="head">Green Market</h1>
+        <div class="he-des">
+          <h5>Dietetica</h5>
+        </div>
+      </div>
+    </section>
+    <section class="carrito">
+      <h2 class="h2-carrito">Mi carrito</h2>
+      <table class="table" id="tabla">        
+      </table>
+    </section>
+    <section class="box">
+      <div class="conteiner-izquierdo">
+        <div class="caja1">
+          <div>
+            <p class="me">
+              <i class="fa-solid fa-truck"></i> medios de envio
+            </p>
+            <input type="text" class="form__input" placeholder="Tu código postal" />
+            <p class="cp">no se mi codigo postal</p>
+          </div>
+          <div>
+            <input class="btn1" type="submit" value="Calcular envio" id="Agregar" name="Agregar" />
+          </div>
+        </div>
+        <div class="caja2">
+          <p class="me">
+            <i class="fa-solid fa-store"></i>nuestro local
+          </p>
+        </div>
+        <div>
+          <div class="infoss">
+            <div class="info-1">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="info-2">
+              <p>
+                DEPÓSITO SAN JUSTO Florencio Varela 1903, San Justo. Atención de
+                Lunes a Sábados - de 8 a 13hs. y de 16 a 21hs.
+              </p>
+            </div>
+            <div class="info-3">
+              <p><strong>Gratis</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="conteiner-derecho">
+      
+        <div>
+          <p><strong id="total"> </strong></p>
+        </div>
+      </div>
+    </section>
+    <section class="box2">
+      <div><a href="pagar.html"><input class="btn" type="submit" value="Iniciar compra" id="Agregar"
+            name="Agregar" /></a></div>
+      <div>
+        <a href="categorias.html" class="vermas">VER MÁS PRODUCTOS</a>
+      </div>
+    </section>
+    <section class="box3"></section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-content-about">
+          <h4>Nosotras</h4>
+          <div class="circle">
+            <i class="fas fa-circle"></i>
+          </div>
+          <p>España, Rocio Belen</p>
+          <p>Fernandez, Candela Rocio</p>
+          <p>Gasparrino, Agostina Ayelen</p>
+          <p>Murillo, Lucia Daniela</p>
+        </div>
+        <div class="footer-div">
+          <div class="social-media">
+            <h4>Siguenos</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.instagram.com/greenmarket_veggie/"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/greenmarket_veggie/"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/greenmarket_veggie/"><i class="fab fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Noticias</h4>
+            <form action="" class="news-form">
+              <input type="text" class="news-input" placeholder="Escribe tu email" />
+              <button class="news-btn" type="submit">
+                <i class="fas fa-envelope"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const selectElement = function (element) {
+      return document.querySelector(element);
+    };
+
+    let menuToggle = selectElement(".menu-toggle");
+    let body = selectElement("body");
+
+    menuToggle.addEventListener("click", function () {
+      body.classList.toggle("open");
+    });
+  </script>
+  <script src="js/carrito.js"></script>
+  <script src="js/carritoAgregar.js"></script>
+  <div>
+    <a href="#" class="arriba"></a>
+</div>
+</body>
+
+</html>
